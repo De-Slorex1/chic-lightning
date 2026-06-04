@@ -8,7 +8,7 @@ import HomePage from './Pages/HomePage';
 import FooterComponent from './Components/FooterComponent';
 import ProductCatalog from './Pages/ProductCatalog';
 // import AboutPage from './Pages/AboutPage';
-import GalleryPage from './Pages/GalleryPage';
+// import GalleryPage from './Pages/GalleryPage';
 import ContactPage from './Pages/ContactPage';
 import ErrorPage from './pages/ErrorPage';
 import Offers from './pages/Offers'
@@ -33,7 +33,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/catalog" element={<ProductCatalog setCartCount={setCartCount}/>} />
         {/* <Route path="/about" element={<AboutPage />} /> */}
-        <Route path="/gallery" element={<GalleryPage />} />
+        {/* <Route path="/gallery" element={<GalleryPage />} /> */}
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/*" element={<ErrorPage/>}/>
         <Route path="/offers" element={<Offers/>}/>
