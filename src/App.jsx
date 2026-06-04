@@ -7,7 +7,7 @@ import NavComponent from './Components/NavComponent';
 import HomePage from './Pages/HomePage';
 import FooterComponent from './Components/FooterComponent';
 import ProductCatalog from './Pages/ProductCatalog';
-import AboutPage from './Pages/AboutPage';
+// import AboutPage from './Pages/AboutPage';
 import GalleryPage from './Pages/GalleryPage';
 import ContactPage from './Pages/ContactPage';
 import ErrorPage from './pages/ErrorPage';
@@ -32,7 +32,7 @@ function App() {
     <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/catalog" element={<ProductCatalog setCartCount={setCartCount}/>} />
-        <Route path="/about" element={<AboutPage />} />
+        {/* <Route path="/about" element={<AboutPage />} /> */}
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/*" element={<ErrorPage/>}/>
