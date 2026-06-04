@@ -1,0 +1,512 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-main);
+    background-color: #C4C6CF;
+} */
+.contact .contact-title {
+    font-size: 2.5rem;
+    color: #022448;
+    text-align: center;
+}
+.contact{
+  padding-top: 100px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.contact .contact-description {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: #605E58;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+}.contact .contact {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+.contact .contact-container {
+  display: flex;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-main);
+  background-color: #ffffff;
+}
+
+/* --- Left Column: Info Panels --- */
+.contact .contact-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 35%;
+  min-width: 320px;
+}
+
+.contact .info-card {
+  padding: 32px;
+  border-radius: 4px;
+}
+
+
+.contact .hours-card {
+  background-color: var(--bg-light);
+}
+.contact .studio-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  border: 1px solid #d8dadf;
+  background-color: #cecfd4b9;
+}
+.contact .card-title {
+  font-size: 22px;
+  color: #022448;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-weight: bold;
+}
+.contact .add{
+    font-size: 14px;
+    color: #022448;
+    margin-bottom: 4px;
+    font-weight: bold
+}
+.contact .info-card-hours-card{
+    background-color: #8d8b87a6;
+}
+.contact .day{
+    font-size: 20px;
+    color: #5e5d5c;
+}
+.contact .time{
+    font-size: 20px;
+    color: #5e5d5c;
+}
+.contact .sun{
+    font-size: 20px;
+    color: #464444;
+    font-weight: bold;
+}
+.contact .clo{
+    font-size: 20px;
+    color: #464444;
+    font-weight: bold;
+}
+.contact .info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.contact .info-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact .info-icon {
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.contact .info-text strong {
+  display: block;
+  font-size: 14px;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.contact .info-text p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Business Hours List */
+.contact .hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact .hours-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.contact .hours-row.closed {
+  color: #999999;
+}
+
+/* --- Right Column: Contact Form --- */
+.contact .contact-form-card {
+  flex: 1;
+  padding: 40px;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+.fullname{
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+}
+.contact .message{
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.918);
+}
+
+.contact .form-title {
+  font-size: 26px;
+  color: var(--navy-dark);
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.contact .form-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* Form Fields Styling */
+.contact .inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact .form-row {
+  display: flex;
+  gap: 24px;
+}
+
+.contact .form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contact .form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.contact .form-group input {
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  padding: 8px 0;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.contact .form-group input:focus {
+  border-bottom-color: var(--navy-dark);
+}
+
+/* Textarea Field */
+.contact .textarea-group textarea {
+  border: none;
+  background-color: #f7f7f7;
+  padding: 16px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+  outline: none;
+  border-radius: 2px;
+}
+
+.contact .textarea-group textarea:focus {
+  background-color: #f0f0f0;
+}
+
+/* Submit Button */
+.contact .submit-button {
+  align-self: flex-start;
+  background-color: #022448;
+  color: #ffffff;
+  border: none;
+  padding: 14px 36px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 8px;
+}
+
+.contact .submit-button:hover {
+  background-color: #1e2c3b;
+}
+.contact .map{
+    width: 80%;
+    margin-top: 40px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+}
+.contact .maps{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.contact .download-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.contact .download-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.contact .card-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+
+.contact .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.contact .card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.contact .card-heading {
+  font-size: 20px;
+  color: #002d62;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.contact .card-description {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  flex-grow: 1;
+}
+
+.contact .download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #dca725;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact .download-link:hover {
+  color: #bfa01a;
+}
+
+.contact .download-icon {
+  font-size: 14px;
+}
+.contact .card-image{
+    padding: auto;
+}
+.contact .card-image:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.contact .sitemap-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #ffffff;
+}
+
+.contact .sitemap-main-title {
+  font-size: 28px;
+  color: #001f3f; /* Dark Navy Color */
+  margin: 0 0 40px 0;
+  font-weight: 700;
+  font-family: serif; /* Serif styling matching the typography */
+}
+
+.contact .sitemap-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.contact .sitemap-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .sitemap-heading {
+  font-size: 13px;
+  font-weight: 700;
+  color: #001f3f;
+  letter-spacing: 0.5px;
+  margin: 0 0 16px 0;
+}
+
+.contact .sitemap-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact .sitemap-list li {
+  margin-bottom: 10px;
+}
+
+.contact .sitemap-list a {
+  font-size: 13px;
+  color: #555555;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact .sitemap-list a:hover {
+  color: #001f3f;
+}
+/* --- Tablet View --- */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Main Form Area Stacked */
+  .contact .contact-container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .contact .contact-info-column {
+    width: 100%;
+  }
+
+  /* Description Adjustments */
+  .contact .contact-description {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  /* 2-Column Grid for Download Cards */
+  .contact .download-grid-container {
+   
+    gap: 20px;
+  }
+
+  /* 3-Column Grid for Sitemap Footer */
+  .contact .sitemap-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 20px;
+  }
+}
+/* --- Mobile View --- */
+@media screen and (max-width: 600px) {
+  /* Global Spacing Reductions */
+  .contact .contact {
+    padding: 40px 15px;
+  }
+
+  /* Typography Scaling */
+  .contact .contact-title {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+.contact .time{
+    font-size: 17px;
+}
+.contact .day{
+    font-size: 17px;
+}
+  .contact .contact-description {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  /* Main Structure Stacked */
+  .contact .contact-container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .contact .contact-info-column {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .contact .info-card {
+    padding: 20px;
+  }
+
+  /* Form Elements Full Width */
+  .contact .contact-form-card {
+    padding: 24px 15px;
+  }
+
+  .contact .form-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .contact .submit-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Map Banner Sizing */
+  .contact .map {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* 1-Column Grid for Downloads */
+  .contact .download-grid-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 15px;
+  }
+
+  /* 2-Column Grid for Sitemap Footer */
+  .contact .sitemap-container {
+    padding: 40px 15px;
+  }
+
+  .contact .sitemap-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
+  }
+}

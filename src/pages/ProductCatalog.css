@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.productCatalog {
+  display: flex;
+  gap: 24px;
+  padding: 40px;
+  background: #f7f7f7;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 270px;
+  flex-shrink: 0;
+}
+
+.sidebarCard,
+.filterCard {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.filterCard {
+  margin-top: 20px;
+}
+
+.sidebarCard h2 {
+  color: #022448;
+  margin-bottom: 6px;
+}
+
+.sidebarCard p {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.categoryList {
+  list-style: none;
+}
+
+.categoryList li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.categoryList li:hover {
+  background: #f4f4f4;
+  transform: translateX(5px);
+}
+
+.categoryList .active {
+  background: #f3eee3;
+  border-bottom: 3px solid #F6BE39;
+}
+
+.offers {
+  color: #F6BE39;
+  font-weight: 600;
+}
+
+.filterCard h4 {
+  margin-bottom: 15px;
+  color: #022448;
+}
+
+.filterCard label {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.filterCard hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* CONTENT */
+
+.catalogContent {
+  flex: 1;
+}
+
+.catalogHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.catalogHeader h1 {
+  font-size: 56px;
+  color: #022448;
+}
+
+.catalogHeader p {
+  max-width: 650px;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+.sortBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sortBox select {
+  padding: 12px 18px;
+  border: 1px solid #dcdcdc;
+  background: white;
+  cursor: pointer;
+}
+
+/* GRID */
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.productCard {
+  background: white;
+  border: 1px solid #e7e7e7;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.35s;
+}
+
+.productCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.productCard:hover img {
+  transform: scale(1.08);
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #F6BE39;
+  color: #fff;
+  font-size: 12px;
+  padding: 7px 12px;
+  z-index: 10;
+}
+
+.cardBody {
+  padding: 22px;
+}
+
+.cardBody h3 {
+  color: #022448;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.cardBody p {
+  color: #6c6c6c;
+  line-height: 1.6;
+}
+
+.divider {
+  height: 1px;
+  background: #ececec;
+  margin: 20px 0;
+}
+
+.specs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specs span {
+  font-size: 12px;
+  color: #999;
+}
+
+.specs h5 {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.cardFooter h4 {
+  color: #F6BE39;
+}
+
+.cardFooter small {
+  color: #16A34A;
+}
+
+.cardFooter button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: #022448;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.cardFooter button:hover {
+  transform: scale(1.1);
+  background: #F6BE39;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .productCatalog {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .catalogHeader {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalogHeader h1 {
+    font-size: 42px;
+  }
+
+  .productCatalog {
+    padding: 20px;
+  }
+  .sidebar{
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .cardBody h3 {
+    font-size: 24px;
+  }
+
+  .catalogHeader h1 {
+    font-size: 34px;
+  }
+
+  .specs {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+}
