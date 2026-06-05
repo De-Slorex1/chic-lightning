@@ -21,6 +21,7 @@ import Offers from './pages/Offers';
 import FooterComponent from './components/FooterComponent';
 // import NavComp from './components/navComponent';
 import Home from './pages/HomePage';
+import Navbar from './components/Navbar';
 
 AOS.init({
   duration: 900,
@@ -35,16 +36,16 @@ function App() {
 
   return (
     <>
-    {/* <NavComp /> */}
-    <Routes>
-        <Route path="/" index element={<Home />} />
-        <Route path="/catalog" element={<ProductCatalog setCartCount={setCartCount}/>} />
-        <Route path="/about" element={<AboutPage />} /> 
-        <Route path="/gallery" element={<GalleryPage />} /> 
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/*" element={<ErrorPage />}/>
-        <Route path="/offers" element={<Offers />}/>
-    </Routes>
+      <Navbar />
+      <Routes>
+          <Route path="/" index element={<Home />} />
+          <Route path="/catalog" element={<ProductCatalog setCartCount={setCartCount}/>} />
+          <Route path="/about" element={<AboutPage />} /> 
+          <Route path="/gallery" element={<GalleryPage />} /> 
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/*" element={<ErrorPage />}/>
+          <Route path="/offers" element={<Offers />}/>
+      </Routes>
 
     <FooterComponent />
       
