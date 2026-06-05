@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "jspdf": "^4.2.1",
     "lucide-react": "^1.17.0",
     "react": "^19.2.6",
     "react-aos": "^1.0.1",

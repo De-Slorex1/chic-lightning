@@ -1,5 +1,7 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import "./ProductCatalog.css";
+import { FaFilePdf } from "react-icons/fa";
+import { jsPDF } from 'jspdf';
 
 import {
   FaRegLightbulb,
@@ -22,7 +24,7 @@ import img5 from '../assets/solstice.png';
 import img6 from '../assets/zenith.png';
 
 const ProductCatalog = ({setCartCount}) => {
-
+    const [products, setProducts] = useState([]);
     const [sortOption, setSortOption] = useState("Featured");
     const [activeCategory, setActiveCategory] = useState("Ceiling Lights");
     const [selectedMaterials, setSelectedMaterials] = useState([]);
@@ -47,647 +49,59 @@ const ProductCatalog = ({setCartCount}) => {
   );
 };
 
-const products = [
+useEffect(() => {
+  const fetchProducts = async () => {
+    try {
+      const response = await fetch("/data.json");
+      const data = await response.json();
 
-        {
-          id: 1,
-          image: img1,
-          title: "Aurora Crystal Tiered",
-          desc: "A stunning multi-tiered masterpiece featuring...",
-          wattage: "60W x 12",
-          material: "Brass & Crystal",
-          price: "$3,450.00",
-          badge: "NEW COLLECTION",
-          category: "Ceiling Lights",
-          subCategory: "Crystal",
-        },
-        {
-          id: 2,
-          image: img2,
-          title: "Modena Linear Pendant",
-          desc: "Architectural linear lighting perfect for islands and...",
-          wattage: "LED 45W",
-          material: "Aluminum",
-          price: "$895.00",
-          category: "Wall Lights",
-          subCategory: "Modern",
-        },
-        {
-          id: 3,
-          image: img3,
-          title: "Heritage Gold Flush",
-          desc: "Classic design meets modern efficiency...",
-          wattage: "2 x 40W",
-          material: "Hand-Leafed Steel",
-          price: "$425.00",
-          category: "Lamps",
-          subCategory: "Traditional",
-        },
-        {
-          id: 4,
-          image: img4,
-          title: "Foundry Loft Pendant",
-          desc: "Rugged industrial charm refined for modern...",
-          wattage: "60W Edison",
-          material: "Forged Steel",
-          price: "$310.00",
-          category: "Outdoor Lights",
-          subCategory: "Modern",
-        },
-        {
-          id: 5,
-          image: img5,
-          title: "Solstice Wood Ribbon",
-          desc: "Hand-bent oak veneers create a mesmerizing...",
-          wattage: "LED 30W",
-          material: "Oak & Acrylic",
-          price: "$1,120.00",
-          category: "Lamps",
-          subCategory: "Traditional",
-        },
-        {
-          id: 6,
-          image: img6,
-          title: "Zenith Ultra-Slim LED",
-          desc: "Edge-lit technology providing shadowless...",
-          wattage: "24W Dimmable",
-          material: "Anodized Gold",
-          price: "$245.00",
-          category: "Led Lights",
-          subCategory: "Crystal",
-        },
-    {
-    id: 7,
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
-    title: "Crystal Bloom Chandelier",
-    desc: "Sparkling crystal chandelier inspired by blooming flowers.",
-    wattage: "50W x 8",
-    material: "Crystal",
-    price: "$2,250.00",
-    badge: "LUXURY",
-    category: "Ceiling Lights",
-    subCategory: "Crystal"
-    },
-    
-    {
-    id: 8,
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f",
-    title: "Empire Brass Pendant",
-    desc: "Elegant brass pendant ideal for kitchen islands.",
-    wattage: "35W",
-    material: "Brass",
-    price: "$680.00",
-    badge: "TRENDING",
-    category: "Ceiling Lights",
-    subCategory: "Modern"
-    },
-    
-    {
-    id: 9,
-    image: "https://images.unsplash.com/photo-1494526585095-c41746248156",
-    title: "Vintage Lantern Wall Light",
-    desc: "Traditional lantern-style wall fixture with warm glow.",
-    wattage: "40W",
-    material: "Steel",
-    price: "$190.00",
-    badge: "POPULAR",
-    category: "Wall Lights",
-    subCategory: "Traditional"
-    },
-    
-    {
-    id: 10,
-    image: "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-    title: "Nova LED Wall Bar",
-    desc: "Modern LED wall fixture for hallways and bedrooms.",
-    wattage: "18W",
-    material: "Aluminum",
-    price: "$145.00",
-    badge: "BEST SELLER",
-    category: "Wall Lights",
-    subCategory: "Modern"
-    },
-    
-    {
-    id: 11,
-    image: "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
-    title: "Royal Crystal Sconce",
-    desc: "Luxury wall sconce featuring hand-cut crystal accents.",
-    wattage: "25W",
-    material: "Crystal",
-    price: "$320.00",
-    badge: "LUXURY",
-    category: "Wall Lights",
-    subCategory: "Crystal"
-    },
-    
-    {
-    id: 12,
-    image: "https://images.unsplash.com/photo-1494526585095-c41746248156",
-    title: "Orbit Ring Pendant",
-    desc: "Circular LED pendant creating dramatic visual impact.",
-    wattage: "48W",
-    material: "Aluminum",
-    price: "$760.00",
-    badge: "TRENDING",
-    category: "Home Accents",
-    subCategory: "Modern"
-    },
-    
-    {
-    id: 13,
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
-    title: "Aria Table Lamp",
-    desc: "Elegant bedside lamp with soft ambient lighting.",
-    wattage: "15W",
-    material: "Ceramic",
-    price: "$120.00",
-    badge: "POPULAR",
-    category: "Lamps",
-    subCategory: "Traditional"
-    },
-    
-    {
-    id: 14,
-    image: "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-    title: "Halo Desk Lamp",
-    desc: "Compact LED desk lamp for productivity and style.",
-    wattage: "12W",
-    material: "Aluminum",
-    price: "$95.00",
-    badge: "BEST SELLER",
-    category: "Offers",
-    subCategory: "Modern"
-    },
-    
-    {
-    id: 15,
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f",
-    title: "Regency Crystal Lamp",
-    desc: "Premium crystal table lamp with gold detailing.",
-    wattage: "20W",
-    material: "Crystal",
-    price: "$380.00",
-    badge: "LUXURY",
-    category: "Lamps",
-    subCategory: "Crystal"
-    },
-    
-    {
-    id: 16,
-    image: "https://images.unsplash.com/photo-1494526585095-c41746248156",
-    title: "Forest Glow Floor Lamp",
-    desc: "Tall floor lamp with warm oak finish.",
-    wattage: "25W",
-    material: "Oak",
-    price: "$280.00",
-    badge: "NEW COLLECTION",
-    category: "Offers",
-    subCategory: "Modern"
-    },
-    
-    {
-    id: 17,
-    image: "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-    title: "Eclipse Arc Lamp",
-    desc: "Contemporary arc floor lamp for modern living spaces.",
-    wattage: "30W",
-    material: "Steel",
-    price: "$420.00",
-    badge: "TRENDING",
-    category: "Fans",
-    subCategory: "Modern"
-    },
-    
-    {
-    id: 18,
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
-    title: "Beacon Outdoor Lantern",
-    desc: "Weather-resistant outdoor lantern with classic styling.",
-    wattage: "18W",
-    material: "Steel",
-    price: "$165.00",
-    badge: "POPULAR",
-    category: "Outdoor Lights",
-    subCategory: "Traditional"
-    },
-    
-    {
-    id: 19,
-    image: "https://images.unsplash.com/photo-1494526585095-c41746248156",
-    title: "Pathway Solar Light",
-    desc: "Energy-efficient solar pathway illumination.",
-    wattage: "8W",
-    material: "Aluminum",
-    price: "$75.00",
-    badge: "ECO",
-    category: "Home Accents",
-    subCategory: "Modern"
-    },
-    
-    {
-    id: 20,
-    image: "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
-    title: "Garden Glow Bollard",
-    desc: "Elegant landscape lighting for outdoor pathways.",
-    wattage: "12W",
-    material: "Steel",
-    price: "$140.00",
-    badge: "BEST SELLER",
-    category: "Outdoor Lights",
-    subCategory: "Modern"
-    },
-    
-    {
-    id: 21,
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f",
-    title: "Radiant LED Panel",
-    desc: "Slim LED panel providing uniform illumination.",
-    wattage: "36W",
-    material: "Aluminum",
-    price: "$110.00",
-    badge: "TRENDING",
-    category: "LED Lights",
-    subCategory: "Modern"
-    },
-    
-    {
-    id: 22,
-    image: "https://images.unsplash.com/photo-1494526585095-c41746248156",
-    title: "Spectrum Smart Light",
-    desc: "App-controlled RGB lighting with smart features.",
-    wattage: "15W",
-    material: "Polycarbonate",
-    price: "$89.00",
-    badge: "SMART",
-    category: "Offers",
-    subCategory: "Modern"
-    },
-    
-    {
-    id: 23,
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
-    title: "Celestial Ring Chandelier",
-    desc: "Floating ring chandelier with integrated LEDs.",
-    wattage: "55W",
-    material: "Aluminum",
-    price: "$1,850.00",
-    badge: "LUXURY",
-    category: "Ceiling Lights",
-    subCategory: "Modern"
-    },
-    
-    {
-    id: 24,
-    image: "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
-    title: "Grand Palace Chandelier",
-    desc: "Large crystal centerpiece designed for luxury interiors.",
-    wattage: "60W x 18",
-    material: "Crystal",
-    price: "$5,900.00",
-    badge: "PREMIUM",
-    category: "Fans",
-    subCategory: "Crystal"
-    },
-    
-    {
-    id: 25,
-    image: "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-    title: "Metro Track Light",
-    desc: "Adjustable track lighting for modern homes.",
-    wattage: "20W x 4",
-    material: "Aluminum",
-    price: "$260.00",
-    badge: "POPULAR",
-    category: "Offers",
-    subCategory: "Modern"
-    },
-    {
-      id: 26,
-      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f",
-      title: "Luna Frost Pendant",
-      desc: "Elegant frosted glass pendant with ambient glow.",
-      wattage: "28W",
-      material: "Glass",
-      price: "$340.00",
-      badge: "NEW COLLECTION",
-      category: "Home Accents",
-      subCategory: "Modern"
-    },
-    
-    {
-      id: 27,
-      image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
-      title: "Imperial Crystal Crown",
-      desc: "Statement crystal chandelier for luxury interiors.",
-      wattage: "60W x 14",
-      material: "Crystal",
-      price: "$4,200.00",
-      badge: "PREMIUM",
-      category: "Ceiling Lights",
-      subCategory: "Crystal"
-    },
-    
-    {
-      id: 28,
-      image: "https://images.unsplash.com/photo-1494526585095-c41746248156",
-      title: "Nordic Beam Pendant",
-      desc: "Minimalist Scandinavian-inspired pendant fixture.",
-      wattage: "32W",
-      material: "Oak",
-      price: "$590.00",
-      badge: "TRENDING",
-      category: "Ceiling Lights",
-      subCategory: "Modern"
-    },
-    
-    {
-      id: 29,
-      image: "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-      title: "Regal Wall Lantern",
-      desc: "Classic lantern wall fixture with brass accents.",
-      wattage: "40W",
-      material: "Brass",
-      price: "$220.00",
-      badge: "POPULAR",
-      category: "Wall Lights",
-      subCategory: "Traditional"
-    },
-    
-    {
-      id: 30,
-      image: "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
-      title: "Glow Edge Sconce",
-      desc: "Modern wall light with seamless illumination.",
-      wattage: "18W",
-      material: "Aluminum",
-      price: "$160.00",
-      badge: "BEST SELLER",
-      category: "Wall Lights",
-      subCategory: "Modern"
-    },
-    
-    {
-      id: 31,
-      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f",
-      title: "Diamond Crystal Sconce",
-      desc: "Luxury crystal wall fixture with shimmering finish.",
-      wattage: "22W",
-      material: "Crystal",
-      price: "$395.00",
-      badge: "LUXURY",
-      category: "Wall Lights",
-      subCategory: "Crystal"
-    },
-    
-    {
-      id: 32,
-      image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
-      title: "Harmony Table Lamp",
-      desc: "Elegant ceramic lamp for bedrooms and lounges.",
-      wattage: "12W",
-      material: "Ceramic",
-      price: "$110.00",
-      badge: "POPULAR",
-      category: "Lamps",
-      subCategory: "Traditional"
-    },
-    
-    {
-      id: 33,
-      image: "https://images.unsplash.com/photo-1494526585095-c41746248156",
-      title: "Vertex LED Desk Lamp",
-      desc: "Adjustable desk lamp with touch controls.",
-      wattage: "10W",
-      material: "Aluminum",
-      price: "$85.00",
-      badge: "SMART",
-      category: "Lamps",
-      subCategory: "Modern"
-    },
-    
-    {
-      id: 34,
-      image: "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-      title: "Royal Amber Lamp",
-      desc: "Crystal-inspired table lamp with warm glow.",
-      wattage: "15W",
-      material: "Glass",
-      price: "$260.00",
-      badge: "LUXURY",
-      category: "Lamps",
-      subCategory: "Crystal"
-    },
-    
-    {
-      id: 35,
-      image: "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
-      title: "Auric Floor Lamp",
-      desc: "Tall designer floor lamp with premium finish.",
-      wattage: "28W",
-      material: "Steel",
-      price: "$390.00",
-      badge: "TRENDING",
-      category: "Lamps",
-      subCategory: "Modern"
-    },
-    
-    {
-      id: 36,
-      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f",
-      title: "Garden Beacon",
-      desc: "Weather-resistant outdoor pathway fixture.",
-      wattage: "15W",
-      material: "Steel",
-      price: "$135.00",
-      badge: "BEST SELLER",
-      category: "Outdoor Lights",
-      subCategory: "Traditional"
-    },
-    
-    {
-      id: 37,
-      image: "https://images.unsplash.com/photo-1494526585095-c41746248156",
-      title: "Solar Horizon Light",
-      desc: "Solar-powered outdoor lighting with dusk sensor.",
-      wattage: "8W",
-      material: "Polycarbonate",
-      price: "$70.00",
-      badge: "ECO",
-      category: "Outdoor Lights",
-      subCategory: "Modern"
-    },
-    
-    {
-      id: 38,
-      image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
-      title: "Parkway Bollard",
-      desc: "Architectural landscape lighting for pathways.",
-      wattage: "16W",
-      material: "Aluminum",
-      price: "$180.00",
-      badge: "POPULAR",
-      category: "Outdoor Lights",
-      subCategory: "Modern"
-    },
-    
-    {
-      id: 39,
-      image: "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-      title: "Radiance LED Panel",
-      desc: "Slim ceiling panel delivering uniform brightness.",
-      wattage: "40W",
-      material: "Aluminum",
-      price: "$130.00",
-      badge: "TRENDING",
-      category: "LED Lights",
-      subCategory: "Modern"
-    },
-    
-    {
-      id: 40,
-      image: "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
-      title: "Smart Spectrum Bulb",
-      desc: "Wi-Fi enabled bulb with millions of colors.",
-      wattage: "12W",
-      material: "Polycarbonate",
-      price: "$55.00",
-      badge: "SMART",
-      category: "LED Lights",
-      subCategory: "Modern"
-    },
-    
-    {
-      id: 41,
-      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f",
-      title: "Infinity Ring Pendant",
-      desc: "Floating ring design with integrated LEDs.",
-      wattage: "52W",
-      material: "Aluminum",
-      price: "$1,450.00",
-      badge: "LUXURY",
-      category: "Ceiling Lights",
-      subCategory: "Modern"
-    },
-    
-    {
-      id: 42,
-      image: "https://images.unsplash.com/photo-1494526585095-c41746248156",
-      title: "Majestic Crystal Empire",
-      desc: "Large luxury chandelier for grand spaces.",
-      wattage: "60W x 20",
-      material: "Crystal",
-      price: "$6,500.00",
-      badge: "PREMIUM",
-      category: "Ceiling Lights",
-      subCategory: "Crystal"
-    },
-    
-    {
-      id: 43,
-      image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
-      title: "Metro Spotlight Rail",
-      desc: "Adjustable track light system for interiors.",
-      wattage: "18W x 4",
-      material: "Steel",
-      price: "$280.00",
-      badge: "BEST SELLER",
-      category: "LED Lights",
-      subCategory: "Modern"
-    },
-    
-    {
-      id: 44,
-      image: "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-      title: "Vintage Edison Pendant",
-      desc: "Industrial pendant inspired by classic Edison lamps.",
-      wattage: "40W",
-      material: "Steel",
-      price: "$210.00",
-      badge: "TRENDING",
-      category: "Ceiling Lights",
-      subCategory: "Traditional"
-    },
-    
-    {
-      id: 45,
-      image: "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
-      title: "Opal Glass Pendant",
-      desc: "Elegant pendant with soft opal diffusion.",
-      wattage: "24W",
-      material: "Glass",
-      price: "$320.00",
-      badge: "NEW COLLECTION",
-      category: "Ceiling Lights",
-      subCategory: "Modern"
-    },
-    
-    {
-      id: 46,
-      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f",
-      title: "Prestige Crystal Halo",
-      desc: "Luxury halo chandelier featuring premium crystals.",
-      wattage: "50W x 10",
-      material: "Crystal",
-      price: "$3,850.00",
-      badge: "LUXURY",
-      category: "Ceiling Lights",
-      subCategory: "Crystal"
-    },
-    
-    {
-      id: 47,
-      image: "https://images.unsplash.com/photo-1494526585095-c41746248156",
-      title: "Urban Glow Wall Light",
-      desc: "Contemporary wall fixture for modern homes.",
-      wattage: "16W",
-      material: "Aluminum",
-      price: "$145.00",
-      badge: "POPULAR",
-      category: "Wall Lights",
-      subCategory: "Modern"
-    },
-    
-    {
-      id: 48,
-      image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
-      title: "Classic Manor Sconce",
-      desc: "Traditional wall sconce with decorative detailing.",
-      wattage: "25W",
-      material: "Brass",
-      price: "$235.00",
-      badge: "TRADITIONAL",
-      category: "Wall Lights",
-      subCategory: "Traditional"
-    },
-    
-    {
-      id: 49,
-      image: "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-      title: "Eco Solar Lantern",
-      desc: "Outdoor solar lantern with automatic illumination.",
-      wattage: "10W",
-      material: "Polycarbonate",
-      price: "$90.00",
-      badge: "ECO",
-      category: "Outdoor Lights",
-      subCategory: "Modern"
-    },
-    
-    {
-      id: 50,
-      image: "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
-      title: "Signature Grand Chandelier",
-      desc: "Premium centerpiece chandelier for luxury interiors.",
-      wattage: "60W x 16",
-      material: "Crystal",
-      price: "$5,200.00",
-      badge: "SIGNATURE",
-      category: "Ceiling Lights",
-      subCategory: "Crystal"
+      setProducts(data);
+    } catch (error) {
+      console.error("Error loading products:", error);
     }
-    ];
-  
+  };
+
+  fetchProducts();
+}, []);
+
+const handleDownloadPDF = (product) => {
+  const doc = new jsPDF();
+
+  // Title
+  doc.setFontSize(20);
+  doc.text(product.title, 20, 20);
+
+  // Description
+  doc.setFontSize(12);
+
+  const description = doc.splitTextToSize(
+    product.longDescription,
+    170
+  );
+
+  doc.text(description, 20, 35);
+
+  // Product Details
+  doc.text(`Price: ${product.price}`, 20, 90);
+  doc.text(`Material: ${product.material}`, 20, 100);
+  doc.text(`Wattage: ${product.wattage}`, 20, 110);
+  doc.text(`Category: ${product.category}`, 20, 120);
+  doc.text(`Sub Category: ${product.subCategory}`, 20, 130);
+
+  // Features
+  doc.setFontSize(14);
+  doc.text("Features", 20, 150);
+
+  doc.setFontSize(12);
+
+  product.features.forEach((feature, index) => {
+    doc.text(`• ${feature}`, 25, 165 + index * 10);
+  });
+
+  doc.save(
+    `${product.title.toLowerCase().replace(/\s+/g, "-")}.pdf`
+  );
+};
 
 const sortedProducts = [...products].sort((a, b) => {
   const priceA = Number(
@@ -705,11 +119,10 @@ const sortedProducts = [...products].sort((a, b) => {
   if (sortOption === "High") {
     return priceB - priceA;
   }
-
   return 0;
 });
 
-  const filteredProducts = sortedProducts.filter((product) => {
+const filteredProducts = sortedProducts.filter((product) => {
     const categoryMatch =
       activeCategory === "All" ? true : product.category === activeCategory;
 
@@ -725,6 +138,7 @@ const sortedProducts = [...products].sort((a, b) => {
 
     return categoryMatch && materialMatch && subCategoryMatch;
   });
+
 
   return (
     <div className="productCatalog">
@@ -920,9 +334,21 @@ const sortedProducts = [...products].sort((a, b) => {
                     <small>● In Stock</small>
                   </div>
 
-                  <button onClick={handleAddToCart}>
-                    <FaShoppingBasket />
-                  </button>
+                  <div className="productActions">
+                    <button
+                      className="downloadBtn"
+                      onClick={() => handleDownloadPDF(product)}
+                    >
+                      PDF
+                    </button>
+
+                    <button
+                      className="cartBtn"
+                      onClick={handleAddToCart}
+                    >
+                      <FaShoppingBasket />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

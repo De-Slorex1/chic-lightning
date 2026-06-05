@@ -12,19 +12,23 @@ import { HashLink } from 'react-router-hash-link';
 import logo from '../assets/logo.png';
 
 const NavComponent = ({cartCount}) => {
-
-
   const [menuOpen, setMenuOpen] = useState(false);
-  const [liveCount, setLiveCount] = useState(1282);
-   useEffect(() => {
-  const interval = setInterval(() => {
-    const change = Math.floor(Math.random() * 11) - 5; // -5 to +5
+  const [liveCount, setLiveCount] = useState(0);
+  
+  useEffect(() => {
+    const hasVisited = localStorage.getItem("hasVisited");
 
-    setLiveCount(prev => Math.max(1000, prev + change));
-  }, 5000);
+    let count = Number(localStorage.getItem("visitCount")) || 0;
 
-  return () => clearInterval(interval);
-}, []);
+    if (!hasVisited) {
+      count += 1;
+
+      localStorage.setItem("visitCount", count);
+      localStorage.setItem("hasVisited", "true");
+    }
+
+    setLiveCount(count);
+  }, []);
 
   return (
     <nav>
@@ -45,11 +49,6 @@ const NavComponent = ({cartCount}) => {
           <div className="logo-container">
             <img src={logo} alt="Chic Lighting" />
           </div>
-
-          <button className="nav-count">
-            <IoEyeOutline />
-            <span>Live: {liveCount.toLocaleString()}</span>
-          </button>
 
         </div>
 
@@ -78,7 +77,10 @@ const NavComponent = ({cartCount}) => {
           </div>
 
           <div className="nav-icon profile-icon">
-            <IoPersonCircleOutline />
+            <button className="nav-count">
+              <IoEyeOutline />
+              <span>Live: {liveCount.toLocaleString()}</span>
+            </button>
           </div>
 
         </div>

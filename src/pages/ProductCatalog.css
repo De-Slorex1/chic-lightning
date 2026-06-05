@@ -244,6 +244,31 @@
   background: #F6BE39;
 }
 
+.productActions {
+  display: flex;
+  gap: 10px;
+}
+
+.downloadBtn,
+.cartBtn {
+  border: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.downloadBtn {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.cartBtn {
+  background: #c89b3c;
+  color: #fff;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 1200px) {

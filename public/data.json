@@ -1,0 +1,997 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.postimg.cc/x8ykzjcS/ozkan-guner-3r-AQpuw-TBOo-unsplash.jpg",
+    "title": "Aurora Crystal Tiered",
+    "desc": "A stunning multi-tiered masterpiece featuring...",
+    "longDescription": "The Aurora Crystal Tiered chandelier is a luxury centerpiece designed to transform high-end interiors. Crafted with precision-cut crystal layers and a reinforced brass frame, it delivers both elegance and durability. Its multi-tier structure creates a cascading light effect that enhances dining halls, lobbies, and luxury residential spaces.",
+    "wattage": "60W x 12",
+    "material": "Brass & Crystal",
+    "price": "$3,450.00",
+    "badge": "NEW COLLECTION",
+    "category": "Ceiling Lights",
+    "subCategory": "Crystal",
+    "pdf": "/pdfs/aurora-crystal-tiered.pdf",
+    "features": [
+      "Multi-tier crystal design",
+      "Premium brass framework",
+      "Dimmable lighting support",
+      "Ideal for luxury interiors"
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://i.postimg.cc/rpQthwJF/greg-rosenke-6Qn-Ef-b47e-A-unsplash.jpg",
+    "title": "Modena Linear Pendant",
+    "desc": "Architectural linear lighting perfect for islands and...",
+    "longDescription": "The Modena Linear Pendant is a sleek architectural lighting solution designed for modern kitchen islands and commercial spaces. Its minimalist aluminum body delivers focused illumination while maintaining a clean aesthetic.",
+    "wattage": "LED 45W",
+    "material": "Aluminum",
+    "price": "$895.00",
+    "category": "Wall Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/modena-linear-pendant.pdf",
+    "features": [
+      "Linear modern design",
+      "Energy-efficient LED",
+      "Ideal for kitchen islands",
+      "Slim architectural profile"
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://i.postimg.cc/3xPK35x4/joel-henry-pd-Iw-PL3HU2s-unsplash.jpg",
+    "title": "Heritage Gold Flush",
+    "desc": "Classic design meets modern efficiency...",
+    "longDescription": "Heritage Gold Flush blends traditional craftsmanship with modern lighting efficiency. Finished with hand-leafed steel and warm diffusion, it is ideal for classic interiors seeking timeless elegance.",
+    "wattage": "2 x 40W",
+    "material": "Hand-Leafed Steel",
+    "price": "$425.00",
+    "category": "Lamps",
+    "subCategory": "Traditional",
+    "pdf": "/pdfs/heritage-gold-flush.pdf",
+    "features": [
+      "Classic flush mount design",
+      "Hand-finished detailing",
+      "Warm ambient glow",
+      "Perfect for vintage interiors"
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://i.postimg.cc/cCjzfWjD/randy-fath-cs-K5XPO87l-I-unsplash.jpg",
+    "title": "Foundry Loft Pendant",
+    "desc": "Rugged industrial charm refined for modern...",
+    "longDescription": "Foundry Loft Pendant brings industrial aesthetics into modern interiors. Built from forged steel, it delivers durability with raw architectural charm, perfect for loft-style spaces.",
+    "wattage": "60W Edison",
+    "material": "Forged Steel",
+    "price": "$310.00",
+    "category": "Outdoor Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/foundry-loft-pendant.pdf",
+    "features": [
+      "Industrial loft design",
+      "Forged steel body",
+      "Edison bulb compatible",
+      "Durable outdoor-ready build"
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://i.postimg.cc/CKGVYRty/carolyn-christine-BCNO7Ju-Ni1w-unsplash.jpg",
+    "title": "Solstice Wood Ribbon",
+    "desc": "Hand-bent oak veneers create a mesmerizing...",
+    "longDescription": "Solstice Wood Ribbon is a sculptural lighting piece crafted from hand-bent oak veneers. It produces a warm organic glow perfect for artistic interiors seeking nature-inspired design.",
+    "wattage": "LED 30W",
+    "material": "Oak & Acrylic",
+    "price": "$1,120.00",
+    "category": "Lamps",
+    "subCategory": "Traditional",
+    "pdf": "/pdfs/solstice-wood-ribbon.pdf",
+    "features": [
+      "Handcrafted wood design",
+      "Soft ambient lighting",
+      "Eco-friendly materials",
+      "Artistic sculptural form"
+    ]
+  },
+  {
+    "id": 6,
+    "image": "img6",
+    "title": "Zenith Ultra-Slim LED",
+    "desc": "Edge-lit technology providing shadowless...",
+    "longDescription": "Zenith Ultra-Slim LED is an ultra-modern lighting panel designed for shadowless illumination. Its anodized gold finish gives it a premium architectural look suitable for contemporary ceilings.",
+    "wattage": "24W Dimmable",
+    "material": "Anodized Gold",
+    "price": "$245.00",
+    "category": "Led Lights",
+    "subCategory": "Crystal",
+    "pdf": "/pdfs/zenith-ultra-slim-led.pdf",
+    "features": [
+      "Ultra-slim design",
+      "Shadowless illumination",
+      "Dimmable control",
+      "Modern architectural finish"
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "title": "Crystal Bloom Chandelier",
+    "desc": "Sparkling crystal chandelier inspired by blooming flowers.",
+    "longDescription": "Crystal Bloom Chandelier is inspired by floral patterns, featuring layered crystal petals that refract light beautifully across any space. A true statement piece for luxury dining rooms and grand entryways.",
+    "wattage": "50W x 8",
+    "material": "Crystal",
+    "price": "$2,250.00",
+    "badge": "LUXURY",
+    "category": "Ceiling Lights",
+    "subCategory": "Crystal",
+    "pdf": "/pdfs/crystal-bloom-chandelier.pdf",
+    "features": [
+      "Floral crystal design",
+      "Luxury centerpiece",
+      "Multi-directional light refraction",
+      "Ideal for high-end interiors"
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
+    "title": "Empire Brass Pendant",
+    "desc": "Elegant brass pendant ideal for kitchen islands.",
+    "longDescription": "Empire Brass Pendant delivers a warm golden aesthetic perfect for kitchen islands and dining areas. Its premium brass construction and focused beam make it a timeless modern luxury fixture.",
+    "wattage": "35W",
+    "material": "Brass",
+    "price": "$680.00",
+    "badge": "TRENDING",
+    "category": "Ceiling Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/empire-brass-pendant.pdf",
+    "features": [
+      "Brass luxury finish",
+      "Focused illumination",
+      "Modern elegance",
+      "Perfect for kitchen and dining"
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+    "title": "Vintage Lantern Wall Light",
+    "desc": "Traditional lantern-style wall fixture with warm glow.",
+    "longDescription": "Vintage Lantern Wall Light brings classic charm with a warm ambient glow. Its steel construction and lantern silhouette make it suitable for traditional, rustic, and heritage-inspired interiors.",
+    "wattage": "40W",
+    "material": "Steel",
+    "price": "$190.00",
+    "badge": "POPULAR",
+    "category": "Wall Lights",
+    "subCategory": "Traditional",
+    "pdf": "/pdfs/vintage-lantern-wall-light.pdf",
+    "features": [
+      "Vintage lantern silhouette",
+      "Warm ambient lighting",
+      "Rustic steel design",
+      "Durable all-weather build"
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    "title": "Nova LED Wall Bar",
+    "desc": "Modern LED wall fixture for hallways and bedrooms.",
+    "longDescription": "Nova LED Wall Bar is a sleek, energy-efficient lighting solution designed for modern hallways and bedrooms. Its slim aluminum body pairs minimal aesthetics with bright, consistent illumination.",
+    "wattage": "18W",
+    "material": "Aluminum",
+    "price": "$145.00",
+    "badge": "BEST SELLER",
+    "category": "Wall Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/nova-led-wall-bar.pdf",
+    "features": [
+      "Modern minimalist design",
+      "Energy-efficient LED",
+      "Slim wall-mount profile",
+      "Ideal for hallways and bedrooms"
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
+    "title": "Royal Crystal Sconce",
+    "desc": "Luxury wall sconce featuring hand-cut crystal accents.",
+    "longDescription": "Royal Crystal Sconce is a luxury wall fixture adorned with hand-cut crystal accents. Its radiant sparkle and classic form make it a perfect complement to high-end living rooms, corridors, and hotel interiors.",
+    "wattage": "25W",
+    "material": "Crystal",
+    "price": "$320.00",
+    "badge": "LUXURY",
+    "category": "Wall Lights",
+    "subCategory": "Crystal",
+    "pdf": "/pdfs/royal-crystal-sconce.pdf",
+    "features": [
+      "Hand-cut crystal accents",
+      "Luxury wall fixture",
+      "Elegant light diffusion",
+      "Suitable for premium interiors"
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+    "title": "Orbit Ring Pendant",
+    "desc": "Circular LED pendant creating dramatic visual impact.",
+    "longDescription": "Orbit Ring Pendant features a bold circular LED design that creates a dramatic focal point in any modern interior. Its aluminum construction ensures lasting durability with a refined finish.",
+    "wattage": "48W",
+    "material": "Aluminum",
+    "price": "$760.00",
+    "badge": "TRENDING",
+    "category": "Home Accents",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/orbit-ring-pendant.pdf",
+    "features": [
+      "Circular ring LED design",
+      "Bold visual statement",
+      "Durable aluminum body",
+      "Ideal for modern living rooms"
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://i.postimg.cc/rpQthwJF/greg-rosenke-6Qn-Ef-b47e-A-unsplash.jpg",
+    "title": "Aria Table Lamp",
+    "desc": "Elegant bedside lamp with soft ambient lighting.",
+    "longDescription": "Aria Table Lamp offers elegant bedside illumination with a soft ambient glow. Its ceramic base and classic proportions complement traditional and transitional bedroom decors effortlessly.",
+    "wattage": "15W",
+    "material": "Ceramic",
+    "price": "$120.00",
+    "badge": "POPULAR",
+    "category": "Lamps",
+    "subCategory": "Traditional",
+    "pdf": "/pdfs/aria-table-lamp.pdf",
+    "features": [
+      "Soft ambient glow",
+      "Ceramic base construction",
+      "Elegant bedside design",
+      "Suitable for traditional decors"
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    "title": "Halo Desk Lamp",
+    "desc": "Compact LED desk lamp for productivity and style.",
+    "longDescription": "Halo Desk Lamp is a compact, energy-efficient LED fixture designed for workspaces. Its adjustable arm and focused beam provide ideal task lighting while maintaining a clean modern aesthetic on any desk.",
+    "wattage": "12W",
+    "material": "Aluminum",
+    "price": "$95.00",
+    "badge": "BEST SELLER",
+    "category": "Offers",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/halo-desk-lamp.pdf",
+    "features": [
+      "Compact LED task light",
+      "Adjustable arm",
+      "Energy-efficient design",
+      "Modern workspace aesthetic"
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
+    "title": "Regency Crystal Lamp",
+    "desc": "Premium crystal table lamp with gold detailing.",
+    "longDescription": "Regency Crystal Lamp is a premium table lamp featuring a crystal body with intricate gold detailing. Designed for luxury bedrooms and living rooms, it exudes sophistication and timeless elegance.",
+    "wattage": "20W",
+    "material": "Crystal",
+    "price": "$380.00",
+    "badge": "LUXURY",
+    "category": "Lamps",
+    "subCategory": "Crystal",
+    "pdf": "/pdfs/regency-crystal-lamp.pdf",
+    "features": [
+      "Premium crystal body",
+      "Gold accent detailing",
+      "Luxury bedside statement",
+      "Timeless traditional design"
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+    "title": "Forest Glow Floor Lamp",
+    "desc": "Tall floor lamp with warm oak finish.",
+    "longDescription": "Forest Glow Floor Lamp stands tall with a warm oak finish that brings natural warmth into modern living spaces. Its slender silhouette and soft upward glow create a cozy, welcoming atmosphere.",
+    "wattage": "25W",
+    "material": "Oak",
+    "price": "$280.00",
+    "badge": "NEW COLLECTION",
+    "category": "Offers",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/forest-glow-floor-lamp.pdf",
+    "features": [
+      "Warm oak finish",
+      "Tall slender silhouette",
+      "Soft upward ambient glow",
+      "Natural material aesthetic"
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    "title": "Eclipse Arc Lamp",
+    "desc": "Contemporary arc floor lamp for modern living spaces.",
+    "longDescription": "Eclipse Arc Lamp is a contemporary floor lamp with a sweeping arc design that extends light over seating areas. Its steel construction and modern silhouette make it a statement piece for stylish living rooms.",
+    "wattage": "30W",
+    "material": "Steel",
+    "price": "$420.00",
+    "badge": "TRENDING",
+    "category": "Fans",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/eclipse-arc-lamp.pdf",
+    "features": [
+      "Sweeping arc design",
+      "Overhead ambient lighting",
+      "Sturdy steel construction",
+      "Modern living room statement"
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "title": "Beacon Outdoor Lantern",
+    "desc": "Weather-resistant outdoor lantern with classic styling.",
+    "longDescription": "Beacon Outdoor Lantern combines classic lantern styling with weather-resistant materials, making it perfect for porches, garden entrances, and outdoor entertaining areas requiring reliable and attractive illumination.",
+    "wattage": "18W",
+    "material": "Steel",
+    "price": "$165.00",
+    "badge": "POPULAR",
+    "category": "Outdoor Lights",
+    "subCategory": "Traditional",
+    "pdf": "/pdfs/beacon-outdoor-lantern.pdf",
+    "features": [
+      "Weather-resistant build",
+      "Classic lantern styling",
+      "Ideal for porches and gardens",
+      "Durable steel construction"
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+    "title": "Pathway Solar Light",
+    "desc": "Energy-efficient solar pathway illumination.",
+    "longDescription": "Pathway Solar Light harnesses solar energy to illuminate garden walkways and driveways automatically at dusk. Its lightweight aluminum design blends seamlessly into outdoor landscapes while reducing energy costs.",
+    "wattage": "8W",
+    "material": "Aluminum",
+    "price": "$75.00",
+    "badge": "ECO",
+    "category": "Home Accents",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/pathway-solar-light.pdf",
+    "features": [
+      "Solar-powered operation",
+      "Automatic dusk activation",
+      "Eco-friendly design",
+      "Lightweight aluminum body"
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
+    "title": "Garden Glow Bollard",
+    "desc": "Elegant landscape lighting for outdoor pathways.",
+    "longDescription": "Garden Glow Bollard provides elegant and reliable landscape illumination for outdoor pathways and garden borders. Its steel construction ensures durability in all weather conditions while maintaining refined aesthetics.",
+    "wattage": "12W",
+    "material": "Steel",
+    "price": "$140.00",
+    "badge": "BEST SELLER",
+    "category": "Outdoor Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/garden-glow-bollard.pdf",
+    "features": [
+      "Elegant bollard profile",
+      "All-weather steel construction",
+      "Pathway and border lighting",
+      "Low energy consumption"
+    ]
+  },
+  {
+    "id": 21,
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
+    "title": "Radiant LED Panel",
+    "desc": "Slim LED panel providing uniform illumination.",
+    "longDescription": "Radiant LED Panel delivers uniform, glare-free illumination across offices, kitchens, and commercial spaces. Its slim aluminum profile integrates flush into any ceiling for a seamless modern finish.",
+    "wattage": "36W",
+    "material": "Aluminum",
+    "price": "$110.00",
+    "badge": "TRENDING",
+    "category": "LED Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/radiant-led-panel.pdf",
+    "features": [
+      "Slim flush-mount profile",
+      "Uniform glare-free light",
+      "Suitable for offices and kitchens",
+      "Energy-efficient LED technology"
+    ]
+  },
+  {
+    "id": 22,
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+    "title": "Spectrum Smart Light",
+    "desc": "App-controlled RGB lighting with smart features.",
+    "longDescription": "Spectrum Smart Light offers app-controlled RGB illumination with millions of color options. Compatible with major smart home platforms, it lets you personalize ambiance for any mood or occasion effortlessly.",
+    "wattage": "15W",
+    "material": "Polycarbonate",
+    "price": "$89.00",
+    "badge": "SMART",
+    "category": "Offers",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/spectrum-smart-light.pdf",
+    "features": [
+      "App-controlled RGB colors",
+      "Smart home compatible",
+      "Millions of color options",
+      "Easy mood customization"
+    ]
+  },
+  {
+    "id": 23,
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "title": "Celestial Ring Chandelier",
+    "desc": "Floating ring chandelier with integrated LEDs.",
+    "longDescription": "Celestial Ring Chandelier features a floating halo design with integrated LEDs that cast a dramatic, even glow. Its aluminum construction and minimalist geometry make it a defining centerpiece for contemporary interiors.",
+    "wattage": "55W",
+    "material": "Aluminum",
+    "price": "$1,850.00",
+    "badge": "LUXURY",
+    "category": "Ceiling Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/celestial-ring-chandelier.pdf",
+    "features": [
+      "Floating ring halo design",
+      "Integrated LED illumination",
+      "Minimalist contemporary aesthetic",
+      "Dramatic ceiling focal point"
+    ]
+  },
+  {
+    "id": 24,
+    "image": "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
+    "title": "Grand Palace Chandelier",
+    "desc": "Large crystal centerpiece designed for luxury interiors.",
+    "longDescription": "Grand Palace Chandelier is an opulent large-scale crystal centerpiece crafted for ballrooms, grand lobbies, and palatial residences. Its cascading crystal tiers and multi-arm configuration command attention in any space.",
+    "wattage": "60W x 18",
+    "material": "Crystal",
+    "price": "$5,900.00",
+    "badge": "PREMIUM",
+    "category": "Fans",
+    "subCategory": "Crystal",
+    "pdf": "/pdfs/grand-palace-chandelier.pdf",
+    "features": [
+      "Large-scale crystal design",
+      "Multi-arm configuration",
+      "Cascading crystal tiers",
+      "Ideal for ballrooms and lobbies"
+    ]
+  },
+  {
+    "id": 25,
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    "title": "Metro Track Light",
+    "desc": "Adjustable track lighting for modern homes.",
+    "longDescription": "Metro Track Light offers a versatile adjustable track system with four individually positionable heads. Perfect for highlighting artwork, kitchen counters, or retail displays with precision and modern style.",
+    "wattage": "20W x 4",
+    "material": "Aluminum",
+    "price": "$260.00",
+    "badge": "POPULAR",
+    "category": "Offers",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/metro-track-light.pdf",
+    "features": [
+      "Four adjustable light heads",
+      "Versatile track system",
+      "Ideal for accent lighting",
+      "Modern aluminum finish"
+    ]
+  },
+  {
+    "id": 26,
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
+    "title": "Luna Frost Pendant",
+    "desc": "Elegant frosted glass pendant with ambient glow.",
+    "longDescription": "Luna Frost Pendant features a frosted glass globe that diffuses light into a soft, even ambient glow. Its clean lines and understated elegance make it a versatile fit for dining rooms, bedrooms, and entryways.",
+    "wattage": "28W",
+    "material": "Glass",
+    "price": "$340.00",
+    "badge": "NEW COLLECTION",
+    "category": "Home Accents",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/luna-frost-pendant.pdf",
+    "features": [
+      "Frosted glass globe diffuser",
+      "Soft ambient illumination",
+      "Versatile interior styling",
+      "Clean minimalist design"
+    ]
+  },
+  {
+    "id": 27,
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "title": "Imperial Crystal Crown",
+    "desc": "Statement crystal chandelier for luxury interiors.",
+    "longDescription": "Imperial Crystal Crown is a regal statement chandelier adorned with premium precision-cut crystals arranged in a crown-inspired silhouette. Designed for luxury dining rooms and grand entryways seeking unmatched opulence.",
+    "wattage": "60W x 14",
+    "material": "Crystal",
+    "price": "$4,200.00",
+    "badge": "PREMIUM",
+    "category": "Ceiling Lights",
+    "subCategory": "Crystal",
+    "pdf": "/pdfs/imperial-crystal-crown.pdf",
+    "features": [
+      "Crown-inspired crystal silhouette",
+      "Precision-cut premium crystals",
+      "Opulent luxury design",
+      "Ideal for grand entryways"
+    ]
+  },
+  {
+    "id": 28,
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+    "title": "Nordic Beam Pendant",
+    "desc": "Minimalist Scandinavian-inspired pendant fixture.",
+    "longDescription": "Nordic Beam Pendant draws from Scandinavian design principles, featuring a clean oak frame and warm LED glow. Its minimalist form and natural materials bring calm, functional beauty to modern dining and living spaces.",
+    "wattage": "32W",
+    "material": "Oak",
+    "price": "$590.00",
+    "badge": "TRENDING",
+    "category": "Ceiling Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/nordic-beam-pendant.pdf",
+    "features": [
+      "Scandinavian minimalist design",
+      "Natural oak frame",
+      "Warm LED illumination",
+      "Perfect for dining and living rooms"
+    ]
+  },
+  {
+    "id": 29,
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    "title": "Regal Wall Lantern",
+    "desc": "Classic lantern wall fixture with brass accents.",
+    "longDescription": "Regal Wall Lantern is a classically styled wall fixture featuring decorative brass accents and a warm diffused glow. Its heritage-inspired design elevates entryways, hallways, and traditional interior settings.",
+    "wattage": "40W",
+    "material": "Brass",
+    "price": "$220.00",
+    "badge": "POPULAR",
+    "category": "Wall Lights",
+    "subCategory": "Traditional",
+    "pdf": "/pdfs/regal-wall-lantern.pdf",
+    "features": [
+      "Classic lantern wall design",
+      "Decorative brass accents",
+      "Warm diffused glow",
+      "Ideal for traditional interiors"
+    ]
+  },
+  {
+    "id": 30,
+    "image": "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
+    "title": "Glow Edge Sconce",
+    "desc": "Modern wall light with seamless illumination.",
+    "longDescription": "Glow Edge Sconce delivers seamless, edge-lit illumination in a sleek aluminum housing. Its frameless appearance and diffused glow make it a top choice for modern bedrooms, corridors, and contemporary commercial spaces.",
+    "wattage": "18W",
+    "material": "Aluminum",
+    "price": "$160.00",
+    "badge": "BEST SELLER",
+    "category": "Wall Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/glow-edge-sconce.pdf",
+    "features": [
+      "Edge-lit seamless design",
+      "Slim aluminum housing",
+      "Soft diffused illumination",
+      "Ideal for modern corridors"
+    ]
+  },
+  {
+    "id": 31,
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
+    "title": "Diamond Crystal Sconce",
+    "desc": "Luxury crystal wall fixture with shimmering finish.",
+    "longDescription": "Diamond Crystal Sconce is a luxury wall fixture featuring shimmering crystal elements that cast prismatic light patterns. Perfect for adding glamour and sophistication to bedrooms, lounges, and hotel suites.",
+    "wattage": "22W",
+    "material": "Crystal",
+    "price": "$395.00",
+    "badge": "LUXURY",
+    "category": "Wall Lights",
+    "subCategory": "Crystal",
+    "pdf": "/pdfs/diamond-crystal-sconce.pdf",
+    "features": [
+      "Shimmering crystal elements",
+      "Prismatic light patterns",
+      "Luxury glamour design",
+      "Ideal for hotel suites and lounges"
+    ]
+  },
+  {
+    "id": 32,
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "title": "Harmony Table Lamp",
+    "desc": "Elegant ceramic lamp for bedrooms and lounges.",
+    "longDescription": "Harmony Table Lamp features a handcrafted ceramic base with a soft fabric shade, producing warm, soothing light ideal for bedrooms and lounges. Its classic proportions bring timeless elegance to any interior.",
+    "wattage": "12W",
+    "material": "Ceramic",
+    "price": "$110.00",
+    "badge": "POPULAR",
+    "category": "Lamps",
+    "subCategory": "Traditional",
+    "pdf": "/pdfs/harmony-table-lamp.pdf",
+    "features": [
+      "Handcrafted ceramic base",
+      "Soft fabric shade",
+      "Warm soothing illumination",
+      "Timeless classic proportions"
+    ]
+  },
+  {
+    "id": 33,
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+    "title": "Vertex LED Desk Lamp",
+    "desc": "Adjustable desk lamp with touch controls.",
+    "longDescription": "Vertex LED Desk Lamp offers precision task lighting with intuitive touch controls and multiple brightness levels. Its flexible aluminum arm adapts to any work angle, making it ideal for home offices and study spaces.",
+    "wattage": "10W",
+    "material": "Aluminum",
+    "price": "$85.00",
+    "badge": "SMART",
+    "category": "Lamps",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/vertex-led-desk-lamp.pdf",
+    "features": [
+      "Touch control interface",
+      "Multiple brightness levels",
+      "Flexible aluminum arm",
+      "Ideal for home offices"
+    ]
+  },
+  {
+    "id": 34,
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    "title": "Royal Amber Lamp",
+    "desc": "Crystal-inspired table lamp with warm glow.",
+    "longDescription": "Royal Amber Lamp features a crystal-inspired glass body that bathes its surroundings in a rich warm glow. Its elegant proportions and amber diffusion make it a refined accent piece for luxury bedrooms and living rooms.",
+    "wattage": "15W",
+    "material": "Glass",
+    "price": "$260.00",
+    "badge": "LUXURY",
+    "category": "Lamps",
+    "subCategory": "Crystal",
+    "pdf": "/pdfs/royal-amber-lamp.pdf",
+    "features": [
+      "Crystal-inspired glass body",
+      "Rich warm amber glow",
+      "Elegant luxury proportions",
+      "Perfect for bedrooms and lounges"
+    ]
+  },
+  {
+    "id": 35,
+    "image": "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
+    "title": "Auric Floor Lamp",
+    "desc": "Tall designer floor lamp with premium finish.",
+    "longDescription": "Auric Floor Lamp is a tall designer floor fixture with a premium powder-coated steel finish. Its sleek vertical form and directional shade provide both ambient and task lighting for sophisticated living spaces.",
+    "wattage": "28W",
+    "material": "Steel",
+    "price": "$390.00",
+    "badge": "TRENDING",
+    "category": "Lamps",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/auric-floor-lamp.pdf",
+    "features": [
+      "Premium powder-coated finish",
+      "Tall vertical silhouette",
+      "Directional shade design",
+      "Dual ambient and task lighting"
+    ]
+  },
+  {
+    "id": 36,
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
+    "title": "Garden Beacon",
+    "desc": "Weather-resistant outdoor pathway fixture.",
+    "longDescription": "Garden Beacon is a robust outdoor pathway fixture built to withstand all weather conditions. Its classic post-mount design and warm light output enhance garden borders, walkways, and front entrances year-round.",
+    "wattage": "15W",
+    "material": "Steel",
+    "price": "$135.00",
+    "badge": "BEST SELLER",
+    "category": "Outdoor Lights",
+    "subCategory": "Traditional",
+    "pdf": "/pdfs/garden-beacon.pdf",
+    "features": [
+      "All-weather steel construction",
+      "Classic post-mount design",
+      "Warm pathway illumination",
+      "Ideal for gardens and entrances"
+    ]
+  },
+  {
+    "id": 37,
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+    "title": "Solar Horizon Light",
+    "desc": "Solar-powered outdoor lighting with dusk sensor.",
+    "longDescription": "Solar Horizon Light uses integrated photovoltaic technology and a built-in dusk-to-dawn sensor to automatically illuminate outdoor spaces. Its polycarbonate housing is lightweight, UV-resistant, and maintenance-free.",
+    "wattage": "8W",
+    "material": "Polycarbonate",
+    "price": "$70.00",
+    "badge": "ECO",
+    "category": "Outdoor Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/solar-horizon-light.pdf",
+    "features": [
+      "Built-in dusk-to-dawn sensor",
+      "Solar photovoltaic charging",
+      "UV-resistant polycarbonate housing",
+      "Zero running costs"
+    ]
+  },
+  {
+    "id": 38,
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "title": "Parkway Bollard",
+    "desc": "Architectural landscape lighting for pathways.",
+    "longDescription": "Parkway Bollard is an architectural outdoor lighting solution combining clean geometric form with reliable aluminum construction. Designed for public pathways, driveways, and commercial landscapes requiring durable illumination.",
+    "wattage": "16W",
+    "material": "Aluminum",
+    "price": "$180.00",
+    "badge": "POPULAR",
+    "category": "Outdoor Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/parkway-bollard.pdf",
+    "features": [
+      "Architectural bollard form",
+      "Durable aluminum construction",
+      "Suitable for commercial landscapes",
+      "Low maintenance design"
+    ]
+  },
+  {
+    "id": 39,
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    "title": "Radiance LED Panel",
+    "desc": "Slim ceiling panel delivering uniform brightness.",
+    "longDescription": "Radiance LED Panel provides flicker-free, uniform brightness across large ceiling areas. Its ultra-slim profile and energy-efficient LED technology make it ideal for offices, retail environments, and modern kitchens.",
+    "wattage": "40W",
+    "material": "Aluminum",
+    "price": "$130.00",
+    "badge": "TRENDING",
+    "category": "LED Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/radiance-led-panel.pdf",
+    "features": [
+      "Flicker-free uniform brightness",
+      "Ultra-slim ceiling profile",
+      "Energy-efficient LEDs",
+      "Ideal for offices and retail"
+    ]
+  },
+  {
+    "id": 40,
+    "image": "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
+    "title": "Smart Spectrum Bulb",
+    "desc": "Wi-Fi enabled bulb with millions of colors.",
+    "longDescription": "Smart Spectrum Bulb connects to your Wi-Fi network for app and voice control, offering millions of color options and tunable white light. Compatible with Alexa, Google Home, and Apple HomeKit for seamless smart home integration.",
+    "wattage": "12W",
+    "material": "Polycarbonate",
+    "price": "$55.00",
+    "badge": "SMART",
+    "category": "LED Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/smart-spectrum-bulb.pdf",
+    "features": [
+      "Wi-Fi and voice control",
+      "Millions of color options",
+      "Tunable white light",
+      "Compatible with major smart platforms"
+    ]
+  },
+  {
+    "id": 41,
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
+    "title": "Infinity Ring Pendant",
+    "desc": "Floating ring design with integrated LEDs.",
+    "longDescription": "Infinity Ring Pendant features a bold circular floating ring with seamlessly integrated LEDs. Its striking geometry and premium aluminum finish create an unforgettable centerpiece for luxury living rooms and reception areas.",
+    "wattage": "52W",
+    "material": "Aluminum",
+    "price": "$1,450.00",
+    "badge": "LUXURY",
+    "category": "Ceiling Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/infinity-ring-pendant.pdf",
+    "features": [
+      "Bold floating ring geometry",
+      "Seamlessly integrated LEDs",
+      "Premium aluminum finish",
+      "Ideal for luxury reception areas"
+    ]
+  },
+  {
+    "id": 42,
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+    "title": "Majestic Crystal Empire",
+    "desc": "Large luxury chandelier for grand spaces.",
+    "longDescription": "Majestic Crystal Empire is an extraordinary large-scale chandelier featuring twenty light arms and thousands of precision-cut crystal elements. Designed exclusively for grand ballrooms, luxury hotels, and palatial residences.",
+    "wattage": "60W x 20",
+    "material": "Crystal",
+    "price": "$6,500.00",
+    "badge": "PREMIUM",
+    "category": "Ceiling Lights",
+    "subCategory": "Crystal",
+    "pdf": "/pdfs/majestic-crystal-empire.pdf",
+    "features": [
+      "Twenty-arm grand configuration",
+      "Thousands of precision-cut crystals",
+      "Designed for ballrooms and hotels",
+      "Unmatched opulent presence"
+    ]
+  },
+  {
+    "id": 43,
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "title": "Metro Spotlight Rail",
+    "desc": "Adjustable track light system for interiors.",
+    "longDescription": "Metro Spotlight Rail is a flexible four-head track lighting system that allows individual adjustment of each spotlight. Ideal for accentuating artwork, architectural features, and retail merchandising in modern spaces.",
+    "wattage": "18W x 4",
+    "material": "Steel",
+    "price": "$280.00",
+    "badge": "BEST SELLER",
+    "category": "LED Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/metro-spotlight-rail.pdf",
+    "features": [
+      "Four individually adjustable heads",
+      "Flexible track rail system",
+      "Ideal for accent and retail lighting",
+      "Durable steel construction"
+    ]
+  },
+  {
+    "id": 44,
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    "title": "Vintage Edison Pendant",
+    "desc": "Industrial pendant inspired by classic Edison lamps.",
+    "longDescription": "Vintage Edison Pendant pays homage to early 20th-century industrial lighting with an exposed filament Edison bulb and steel cage housing. A timeless piece for industrial lofts, cafes, and eclectic interior designs.",
+    "wattage": "40W",
+    "material": "Steel",
+    "price": "$210.00",
+    "badge": "TRENDING",
+    "category": "Ceiling Lights",
+    "subCategory": "Traditional",
+    "pdf": "/pdfs/vintage-edison-pendant.pdf",
+    "features": [
+      "Exposed filament Edison bulb",
+      "Industrial steel cage design",
+      "Retro early 20th-century aesthetic",
+      "Perfect for lofts and cafes"
+    ]
+  },
+  {
+    "id": 45,
+    "image": "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
+    "title": "Opal Glass Pendant",
+    "desc": "Elegant pendant with soft opal diffusion.",
+    "longDescription": "Opal Glass Pendant features a hand-blown opal glass shade that diffuses light into a gentle, milky glow. Its elegant simplicity suits a wide range of interiors from Scandinavian minimalism to soft contemporary styles.",
+    "wattage": "24W",
+    "material": "Glass",
+    "price": "$320.00",
+    "badge": "NEW COLLECTION",
+    "category": "Ceiling Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/opal-glass-pendant.pdf",
+    "features": [
+      "Hand-blown opal glass shade",
+      "Gentle milky light diffusion",
+      "Versatile interior styling",
+      "Elegant minimalist form"
+    ]
+  },
+  {
+    "id": 46,
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
+    "title": "Prestige Crystal Halo",
+    "desc": "Luxury halo chandelier featuring premium crystals.",
+    "longDescription": "Prestige Crystal Halo is a luxury halo chandelier adorned with ten arms of premium crystals radiating from a central gold-finished ring. It creates a breathtaking crown of light perfect for master bedrooms and luxury dining rooms.",
+    "wattage": "50W x 10",
+    "material": "Crystal",
+    "price": "$3,850.00",
+    "badge": "LUXURY",
+    "category": "Ceiling Lights",
+    "subCategory": "Crystal",
+    "pdf": "/pdfs/prestige-crystal-halo.pdf",
+    "features": [
+      "Ten-arm crystal halo design",
+      "Central gold-finished ring",
+      "Breathtaking crown of light",
+      "Ideal for master bedrooms"
+    ]
+  },
+  {
+    "id": 47,
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+    "title": "Urban Glow Wall Light",
+    "desc": "Contemporary wall fixture for modern homes.",
+    "longDescription": "Urban Glow Wall Light is a contemporary wall fixture designed for modern homes and urban apartments. Its clean aluminum profile and diffused LED output provide stylish and energy-efficient wall illumination.",
+    "wattage": "16W",
+    "material": "Aluminum",
+    "price": "$145.00",
+    "badge": "POPULAR",
+    "category": "Wall Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/urban-glow-wall-light.pdf",
+    "features": [
+      "Contemporary aluminum profile",
+      "Diffused LED output",
+      "Energy-efficient design",
+      "Ideal for urban apartments"
+    ]
+  },
+  {
+    "id": 48,
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "title": "Classic Manor Sconce",
+    "desc": "Traditional wall sconce with decorative detailing.",
+    "longDescription": "Classic Manor Sconce is a traditionally styled brass wall sconce with intricate decorative detailing. Its warm candlelight-inspired glow and heritage craftsmanship make it perfect for manor houses, hotels, and classic interiors.",
+    "wattage": "25W",
+    "material": "Brass",
+    "price": "$235.00",
+    "badge": "TRADITIONAL",
+    "category": "Wall Lights",
+    "subCategory": "Traditional",
+    "pdf": "/pdfs/classic-manor-sconce.pdf",
+    "features": [
+      "Intricate brass detailing",
+      "Candlelight-inspired warm glow",
+      "Heritage craftsmanship",
+      "Ideal for classic and hotel interiors"
+    ]
+  },
+  {
+    "id": 49,
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    "title": "Eco Solar Lantern",
+    "desc": "Outdoor solar lantern with automatic illumination.",
+    "longDescription": "Eco Solar Lantern is a fully solar-powered outdoor lantern that activates automatically at nightfall. Its lightweight polycarbonate construction and classic lantern form make it an eco-friendly choice for gardens and patios.",
+    "wattage": "10W",
+    "material": "Polycarbonate",
+    "price": "$90.00",
+    "badge": "ECO",
+    "category": "Outdoor Lights",
+    "subCategory": "Modern",
+    "pdf": "/pdfs/eco-solar-lantern.pdf",
+    "features": [
+      "Fully solar-powered operation",
+      "Automatic nightfall activation",
+      "Lightweight polycarbonate body",
+      "Eco-friendly zero-cost lighting"
+    ]
+  },
+  {
+    "id": 50,
+    "image": "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9",
+    "title": "Signature Grand Chandelier",
+    "desc": "Premium centerpiece chandelier for luxury interiors.",
+    "longDescription": "Signature Grand Chandelier is the ultimate luxury centerpiece, featuring sixteen arms of hand-cut crystal elements arranged in a sweeping tiered formation. Crafted for the most prestigious residential and hospitality spaces worldwide.",
+    "wattage": "60W x 16",
+    "material": "Crystal",
+    "price": "$5,200.00",
+    "badge": "SIGNATURE",
+    "category": "Ceiling Lights",
+    "subCategory": "Crystal",
+    "pdf": "/pdfs/signature-grand-chandelier.pdf",
+    "features": [
+      "Sixteen-arm tiered formation",
+      "Hand-cut crystal elements",
+      "Designed for prestige spaces",
+      "Ultimate luxury centerpiece"
+    ]
+  }
+]

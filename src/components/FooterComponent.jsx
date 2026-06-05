@@ -1,10 +1,49 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./FooterComponent.css";
 import { HashLink } from 'react-router-hash-link';
 import { FaClock, FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 
 function FooterComponent() {
+  const [location, setLocation] = useState("Detecting...");
+
+  useEffect(() => {
+    if (!navigator.geolocation) {
+      setLocation("Location unavailable");
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      async (position) => {
+        const { latitude, longitude } = position.coords;
+
+        try {
+          const response = await fetch(
+            `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
+          );
+
+          const data = await response.json();
+
+          const city =
+            data.address.city ||
+            data.address.town ||
+            data.address.village ||
+            "Unknown City";
+
+          const country = data.address.country || "";
+
+          setLocation(`${city}, ${country}`);
+        } catch (error) {
+          setLocation("Location unavailable");
+        }
+      },
+      () => {
+        setLocation("Permission denied");
+      }
+    );
+  }, []);
+
   return (
    <div>
      <footer className="footer">
@@ -86,7 +125,7 @@ function FooterComponent() {
 
         <div className="ticker-item">
           <FaMapMarkerAlt />
-          <span>Your Location: London Gallery</span>
+          <span>Your Location: {location}</span>
         </div>
 
         <div className="ticker-item highlight">
