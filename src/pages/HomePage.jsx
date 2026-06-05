@@ -19,7 +19,7 @@ import { GiWallLight } from "react-icons/gi";
 import { TbLamp } from "react-icons/tb";
 import { MdLightbulbOutline } from "react-icons/md";
 
-function HomePage() {
+function Home() {
 
   const products = [
     {
@@ -296,4 +296,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Home;

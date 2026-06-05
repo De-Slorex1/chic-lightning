@@ -12,8 +12,6 @@ import AOS from 'aos';
 // import ErrorPage from './pages/ErrorPage';
 // import Offers from './pages/Offers'
 import "aos/dist/aos.css";
-import NavComponent from './Components/NavComponent';
-import HomePage from './Pages/HomePage';
 import ProductCatalog from './pages/ProductCatalog';
 import AboutPage from './pages/AboutPage';
 import GalleryPage from './pages/GalleryPage';
@@ -21,6 +19,8 @@ import ContactPage from './pages/ContactPage';
 import ErrorPage from './pages/ErrorPage';
 import Offers from './pages/Offers';
 import FooterComponent from './components/FooterComponent';
+import NavComp from './components/navComponent';
+import Home from './pages/HomePage';
 
 AOS.init({
   duration: 900,
@@ -35,9 +35,9 @@ function App() {
 
   return (
     <>
-    <NavComponent />
+    <NavComp />
     <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={} />
         <Route path="/catalog" element={<ProductCatalog setCartCount={setCartCount}/>} />
         <Route path="/about" element={<AboutPage />} /> 
         <Route path="/gallery" element={<GalleryPage />} /> 

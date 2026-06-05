@@ -11,7 +11,7 @@ import { HashLink } from 'react-router-hash-link';
 
 import logo from '../assets/logo.png';
 
-const NavComponent = ({cartCount}) => {
+const NavComp = ({cartCount}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [liveCount, setLiveCount] = useState(0);
   
@@ -121,4 +121,4 @@ const NavComponent = ({cartCount}) => {
   );
 };
 
-export default NavComponent;
+export default NavComp;
