@@ -19,7 +19,7 @@ import ContactPage from './pages/ContactPage';
 import ErrorPage from './pages/ErrorPage';
 import Offers from './pages/Offers';
 import FooterComponent from './components/FooterComponent';
-import NavComp from './components/navComponent';
+// import NavComp from './components/navComponent';
 import Home from './pages/HomePage';
 
 AOS.init({
@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-    <NavComp />
+    {/* <NavComp /> */}
     <Routes>
         <Route path="/" index element={<Home />} />
         <Route path="/catalog" element={<ProductCatalog setCartCount={setCartCount}/>} />
