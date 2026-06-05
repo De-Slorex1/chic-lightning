@@ -37,7 +37,7 @@ function App() {
     <>
     <NavComp />
     <Routes>
-        <Route path="/" element={} />
+        <Route path="/" index element={<Home />} />
         <Route path="/catalog" element={<ProductCatalog setCartCount={setCartCount}/>} />
         <Route path="/about" element={<AboutPage />} /> 
         <Route path="/gallery" element={<GalleryPage />} /> 
