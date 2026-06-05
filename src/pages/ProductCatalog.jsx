@@ -336,13 +336,6 @@ const filteredProducts = sortedProducts.filter((product) => {
 
                   <div className="productActions">
                     <button
-                      className="downloadBtn"
-                      onClick={() => handleDownloadPDF(product)}
-                    >
-                      PDF
-                    </button>
-
-                    <button
                       className="cartBtn"
                       onClick={handleAddToCart}
                     >
